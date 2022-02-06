@@ -1,18 +1,26 @@
 package edu.sdmesa.cisc191;
 
+// Import sort functions from the Java array utility class
+import static java.util.Arrays.sort;
+
+import java.util.Arrays;
+
 /**
- * Lead Author(s):
+ * Lead Author:
  * @author Alexandra Steiner
  * 
  * Other contributors:
- * <<add additional contributors (mentors, tutors, friends) here, with contact information>>
+ * Krithika Yetchina
  * 
  * References:
  * Morelli, R., & Walde, R. (2016). Java, Java, Java: Object-Oriented Problem Solving.
  * Retrieved from https://open.umn.edu/opentextbooks/textbooks/java-java-java-object-oriented-problem-solving
- *  
+ * 
+ * Oracle (2021) Class Arrays. Oracle Documentation. Retrieved from:
+ * https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html
+ * 
  * Version/date: 
- * Version 0.1 - 2/4/22
+ * Version 0.2 - 2/5/22
  * 
  * Responsibilities of class:
  * A helper class containing several common array operations
@@ -109,8 +117,8 @@ public class ArrayChallenge
 	
 	/**
 	 * Purpose: Returns the median of an array
-	 * Calculates median piecewise for even and odd N where
-	 * N is the number of elements in the array
+	 * First sorts the array then calculates the median piecewise
+	 * for even and odd N where N is the number of elements in a sorted array
 	 * 
 	 * In case N is even:
 	 * median = average of array elements at indexes N/2 and N/2-1
@@ -124,6 +132,10 @@ public class ArrayChallenge
 	 * @return the median of array
 	 */
 	public static int median(int[] array) {
+		// Sort the incoming array before calculating the median
+		// Suggested by Krithika Yetchina
+		Arrays.sort(array);
+		
 		// Case for even number of elements
 		if (array.length % 2 == 0) {
 			return (array[array.length/2-1]+array[array.length/2]) / 2;
