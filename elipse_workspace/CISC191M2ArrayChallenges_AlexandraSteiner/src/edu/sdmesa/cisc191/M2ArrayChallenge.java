@@ -2,12 +2,9 @@ package edu.sdmesa.cisc191;
 
 /**
  * Lead Author(s):
- * @author 
- * @author 
- * <<add additional lead authors here, with a full first and last name>>
+ * @author Alexandra Steiner
  * 
  * Other contributors:
- * <<add additional contributors (mentors, tutors, friends) here, with contact information>>
  * 
  * References:
  * Morelli, R., & Walde, R. (2016). Java, Java, Java: Object-Oriented Problem Solving.
@@ -16,12 +13,12 @@ package edu.sdmesa.cisc191;
  * <<add more references here>>
  *  
  * Version/date: 
+ * 0.1 - 2/6/22
  * 
  * Responsibilities of class:
- * 
+ * Implements a variety of common array functions.
  */
-/**
- */
+
 public class M2ArrayChallenge
 {
 	/**
@@ -70,6 +67,31 @@ public class M2ArrayChallenge
 		return -1;
 	}
 	
-	
+	/**
+	 * Purpose: Counts the number of times a provided character value can be 
+	 * found in an array of characters
+	 * This function iterates through the provided array and checks each array 
+	 * element against a provided value. Adds one to the number of instances found
+	 * when a match is found.
+	 * 
+	 * @param array: the array to count characters in
+	 * @param value: a character to search the array for
+	 * @return the number of instances the provided value was found in the array
+	 */
+	public static int countValues(char[] array, int value) {
+		// Start with no instances found to handle an empty array or no instances found
+		int numInstances = 0;
+		
+		// Iterate through the array
+		for (char c : array) {
+			
+			// Check each character against value and iterate count when a match is found
+			if (c == value) {
+				numInstances++;
+			}
+		}
+		
+		return numInstances;
+	}
 
 }

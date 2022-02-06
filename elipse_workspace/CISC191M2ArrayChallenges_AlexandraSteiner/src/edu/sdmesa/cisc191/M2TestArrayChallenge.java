@@ -101,23 +101,23 @@ class M2TestArrayChallenge
 		assertEquals(0, find(array3, 1));
 	}
 
-//	@Test
-//	void testCountValues()
-//	{
-//		char[] array0 = {};
-//		assertEquals(0, countValues(array0, 1));
-//
-//		char[] array1 = {'X'};
-//		assertEquals(1, countValues(array1, 'X'));
-//		assertEquals(0, countValues(array1, 'A'));
-//		
-//		char[] array2 = "RACECAR".toCharArray();
-//		assertEquals(2, countValues(array2, 'R'));
-//		assertEquals(2, countValues(array2, 'A'));
-//	    assertEquals(2, countValues(array2, 'C'));
-//	    assertEquals(1, countValues(array2, 'E'));
-//	}
-//
+	@Test
+	void testCountValues()
+	{
+		char[] array0 = {};
+		assertEquals(0, countValues(array0, 1));
+
+		char[] array1 = {'X'};
+		assertEquals(1, countValues(array1, 'X'));
+		assertEquals(0, countValues(array1, 'A'));
+		
+		char[] array2 = "RACECAR".toCharArray();
+		assertEquals(2, countValues(array2, 'R'));
+		assertEquals(2, countValues(array2, 'A'));
+	    assertEquals(2, countValues(array2, 'C'));
+	    assertEquals(1, countValues(array2, 'E'));
+	}
+
 //	@Test
 //	void testInOrder()
 //	{
