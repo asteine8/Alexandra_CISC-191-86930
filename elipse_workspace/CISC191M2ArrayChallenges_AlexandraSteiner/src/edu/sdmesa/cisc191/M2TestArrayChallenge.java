@@ -77,32 +77,30 @@ class M2TestArrayChallenge
 		assertEquals(false, contains(array2, 4));
 	}
 
-// To remove //: select line(s) and type Ctrl-/ 
-//
-//	/**
-//	 * find returns the first index of a value in an array,
-//	 * or -1 if the value is not in the array
-//	 */
-//	@Test
-//	void testFind()
-//	{
-//		int[] array0 = {};
-//		assertEquals(-1, find(array0, 1));
-//
-//		int[] array1 = {1};
-//		assertEquals(0, find(array1, 1));
-//		assertEquals(-1, find(array1, 2));
-//		
-//		int[] array2 = {4, 5, 6};
-//	    assertEquals(0, find(array2, 4));
-//	    assertEquals(1, find(array2, 5));
-//		assertEquals(2, find(array2, 6));
-//		assertEquals(-1, find(array2, 7));
-//		
-//		int[] array3 = {1, 1, 3};
-//		assertEquals(0, find(array3, 1));
-//	}
-//
+	/**
+	 * find returns the first index of a value in an array,
+	 * or -1 if the value is not in the array
+	 */
+	@Test
+	void testFind()
+	{
+		int[] array0 = {};
+		assertEquals(-1, find(array0, 1));
+
+		int[] array1 = {1};
+		assertEquals(0, find(array1, 1));
+		assertEquals(-1, find(array1, 2));
+		
+		int[] array2 = {4, 5, 6};
+	    assertEquals(0, find(array2, 4));
+	    assertEquals(1, find(array2, 5));
+		assertEquals(2, find(array2, 6));
+		assertEquals(-1, find(array2, 7));
+		
+		int[] array3 = {1, 1, 3};
+		assertEquals(0, find(array3, 1));
+	}
+
 //	@Test
 //	void testCountValues()
 //	{
