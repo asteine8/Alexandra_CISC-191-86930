@@ -60,12 +60,10 @@ import org.junit.jupiter.api.Test;
  * 
  */
 
-class TestArrayChallenge
-{
+class TestArrayChallenge {
 
 	@Test
-	void testMax()
-	{
+	void testMax() {
 		int[] array1 = { 1 };
 		assertEquals(1, max(array1));
 
@@ -78,12 +76,9 @@ class TestArrayChallenge
 		int[] array4 = { -1, -2, -3 };
 		assertEquals(-1, max(array4));
 	}
-
-// To remove //: select line(s) and type Ctrl-/ 
 	
 	@Test
-	void testMin()
-	{
+	void testMin() {
 		int[] array1 = {1};
 		assertEquals(1, min(array1));
 		
@@ -98,8 +93,7 @@ class TestArrayChallenge
 	}
 
 	@Test
-	void testSum()
-	{
+	void testSum() {
 		int[] array0 = {};
 		assertEquals(0, sum(array0));
 		
@@ -117,8 +111,7 @@ class TestArrayChallenge
 	}
 
 	@Test
-	void testAverage()
-	{
+	void testAverage() {
 		int[] array1 = {17};
 		assertEquals(17.0, average(array1));
 		
@@ -133,8 +126,7 @@ class TestArrayChallenge
 	}
 
 	@Test
-	void testMedian()
-	{
+	void testMedian() {
 		int[] array1 = {17};
 		assertEquals(17.0, median(array1));
 		

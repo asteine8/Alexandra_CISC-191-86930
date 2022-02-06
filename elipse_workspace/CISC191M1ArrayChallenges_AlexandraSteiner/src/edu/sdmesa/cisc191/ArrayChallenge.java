@@ -20,13 +20,12 @@ import java.util.Arrays;
  * https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html
  * 
  * Version/date: 
- * Version 0.2 - 2/5/22
+ * Version 0.5 - 2/5/22
  * 
  * Responsibilities of class:
  * A helper class containing several common array operations
  */
-public class ArrayChallenge
-{
+public class ArrayChallenge {
 	/**
 	 * Purpose: Find the largest element in the array given
 	 * This function uses a simple check and hold method to get the
@@ -36,8 +35,7 @@ public class ArrayChallenge
 	 * @param array to search
 	 * @return largest element
 	 */
-	public static int max(int[] array)
-	{
+	public static int max(int[] array) {
 		// Start by assigning the first element as our largest value
 		// Handles the case where there is only one element in the array
 		int currentMax = array[0];
@@ -145,5 +143,4 @@ public class ArrayChallenge
 			return array[array.length/2];
 		}
 	}
-
 }
