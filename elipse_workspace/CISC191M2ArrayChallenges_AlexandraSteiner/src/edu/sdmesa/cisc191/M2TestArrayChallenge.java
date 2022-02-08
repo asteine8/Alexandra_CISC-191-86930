@@ -333,5 +333,19 @@ class M2TestArrayChallenge {
 		assertEquals(4+7+10+16, sumLastRowElements(matrix2));		
 		
 	}
+    
+	/**
+	 * Sorts in ascending order
+	 */
+	@Test
+	void testBogoSort() {
+		int[] array0 = {5, 1, 4, 2, 8};
+		int[] array2 = {1, 2, 4, 5, 8};
+		assertArrayEquals(array2, bogoSort(array0));
+	    int[] array10 = {4, 3, 2, 1};
+	    int[] array11 = {1, 2, 3, 4};
+	    assertArrayEquals(array11, bogoSort(array10));
+	    
+	}
 
 }

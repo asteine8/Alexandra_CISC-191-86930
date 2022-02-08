@@ -1,6 +1,7 @@
 package edu.sdmesa.cisc191;
 
 import java.util.Arrays;
+import java.util.concurrent.ThreadLocalRandom;
 
 /**
  * Lead Author(s):
@@ -64,6 +65,35 @@ public class M2ArrayChallenge {
 		
 		// If no instances are found, return -1
 		return -1;
+	}
+	
+	/**
+	 * Purpose: Sorts the provided array using the bogosort algorithm
+	 * Please see https://en.wikipedia.org/wiki/Bogosort for information on the algorithm
+	 * 
+	 * @param array: the array to sort
+	 * @return the sorted array, eventually...
+	 */
+	public static int[] bogoSort(int[] array) {
+		int [] newArray = copy(array);
+		
+		// Continue shuffling while the array is not in order (I will have order)
+		while (!inOrder(newArray)) {
+			
+			// Implement a Fisher-Yates shuffle (https://rosettacode.org/wiki/Knuth_shuffle)
+			for (int i = newArray.length-1; i > 0; i--) {
+				
+				// Generate a random index in range [0, i]
+				int j = ThreadLocalRandom.current().nextInt(0, i+1);
+				
+				// Swap elements at i and j
+				int temp = newArray[i];
+				newArray[i] = newArray[j];
+				newArray[j] = temp;
+			}
+		}
+		
+		return newArray;
 	}
 	
 	/**
@@ -174,7 +204,7 @@ public class M2ArrayChallenge {
 	}
 	
 	/**
-	 * Purpose: Copies an array into a new array with a separate memory location
+	 * Purpose: Copies a character array into a new array with a separate memory location
 	 * 
 	 * @param array: the array to be copied
 	 * @return a new array with the same contents
@@ -183,6 +213,26 @@ public class M2ArrayChallenge {
 		
 		// Allocates memory for a new array
 		char[] newArray = new char[array.length];
+		
+		// Iterates through both arrays and copies values from array to newArray
+		for (int i = 0; i < array.length; i++) {
+			newArray[i] = array[i];
+		}
+		
+		// Return the new array
+		return newArray;
+	}
+	
+	/**
+	 * Purpose: Copies an integer array into a new array with a separate memory location
+	 * 
+	 * @param array: the array to be copied
+	 * @return a new array with the same contents
+	 */
+	public static int[] copy(int[] array) {
+		
+		// Allocates memory for a new array
+		int[] newArray = new int[array.length];
 		
 		// Iterates through both arrays and copies values from array to newArray
 		for (int i = 0; i < array.length; i++) {
