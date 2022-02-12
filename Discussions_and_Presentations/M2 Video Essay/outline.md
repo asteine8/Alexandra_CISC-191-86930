@@ -7,15 +7,31 @@
 
 # Outline
 - What is an array?
-- Representation of Arrays in Memory in Java
 - Initializing Arrays in Java
-- Array Literals in Java
+  - Declaring Arrays
+    - int myArray[];
+    - int[] myArray[];
+  - Initializing Arrays
+    - int myArray = new int[10];
+  - Array Literals in Java
+    - {1,2,3,4}
+    - {"Hello", "World"}
+    - {'m','a','k','i'}
 - Interacting with Specific Array elements
+  - myArray[3] = 4
+  - int temp = myArray[3]
+- Arrays of Objects
+- Representation of Arrays in Memory in Java
+  - Reference to array
+    - Reference to array elements
+      - data stored in memory
 - Simple example using arrays
+  - 
 - What is a multi-dimensional array?
 - Initializing multi-dimensional arrays and literals
 - Interacting with Specific multi-dimensional array elements
 - Simple example using multi-dimensional arrays
+  - Sum of 2D array
 - Arrays and Java methods
   - Will changing a passed array inside a method modify that array outside the method without returning?
 - Example of a Java method that accepts and returns an array
@@ -32,4 +48,6 @@
 
 # Sources
 Source for Gaussian Blur: https://en.wikipedia.org/wiki/Gaussian_blur
+Memory Model of Arrays: https://javaconceptoftheday.com/how-are-the-arrays-stored-in-the-memory/
+Memory Model of Arrays: https://www.programcreek.com/2013/04/what-does-a-java-array-look-like-in-memory/#:~:text=In%20Java%2C%20an%20array%20stores,arrays%20are%20objects%20in%20Java.
 
