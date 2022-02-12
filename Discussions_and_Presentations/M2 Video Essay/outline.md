@@ -20,12 +20,13 @@
 - Interacting with Specific Array elements
   - myArray[3] = 4
   - int temp = myArray[3]
+- Simple Example of an array
 - Arrays of Objects
 - Representation of Arrays in Memory in Java
   - Reference to array
     - Reference to array elements
       - data stored in memory
-- Simple example using arrays
+- Simple example using arrays to store objects
   - 
 - What is a multi-dimensional array?
 - Initializing multi-dimensional arrays and literals
@@ -42,6 +43,7 @@
     - A collection of cats
     - A dataset of voltages
     - A registry of baby names
+    - A fixed set for reference (the alphabet or possible states)
     - Use arrays to store data when you are trying to store a collection, list, set, ect...
   - Variable Arity
 
@@ -50,4 +52,6 @@
 Source for Gaussian Blur: https://en.wikipedia.org/wiki/Gaussian_blur
 Memory Model of Arrays: https://javaconceptoftheday.com/how-are-the-arrays-stored-in-the-memory/
 Memory Model of Arrays: https://www.programcreek.com/2013/04/what-does-a-java-array-look-like-in-memory/#:~:text=In%20Java%2C%20an%20array%20stores,arrays%20are%20objects%20in%20Java.
+General Info About Arrays: https://www.cs.utah.edu/~germain/PPS/Topics/arrays.html
+
 
