@@ -9,10 +9,13 @@ public class Sum {
 		int runningTotal = 0;
 		
 		// Iterate through array
-		for (int i : array) {
-			runningTotal += i;
+		for (int i = 0; i < array.length; i++) {
+			
+			// Add element to the running total
+			runningTotal += array[i];
 		}
-
+		
+		// Print out sum of array
 		System.out.println(runningTotal);
 	}
 

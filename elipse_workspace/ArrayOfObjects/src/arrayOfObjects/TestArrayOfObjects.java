@@ -16,7 +16,5 @@ public class TestArrayOfObjects {
 		for (int i = 0; i < cats.length; i++) {
 			System.out.println(cats[i].toString());
 		}
-		
-
 	}
 }
