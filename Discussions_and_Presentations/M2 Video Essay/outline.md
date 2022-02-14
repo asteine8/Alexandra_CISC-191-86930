@@ -57,4 +57,6 @@ Memory Model of Arrays: https://www.programcreek.com/2013/04/what-does-a-java-ar
 General Info About Arrays: https://www.cs.utah.edu/~germain/PPS/Topics/arrays.html
 
 
-Wikipedia (Jan., 2022). Gaussian blur. 
+Wikipedia (Jan., 2022). Gaussian blur. The Wikimedia Foundation. https://en.wikipedia.org/wiki/Gaussian_blur
+pramodbablad (Dec., 2014) How Are the Arrays stored in the memory? javaconceptoftheday. https://javaconceptoftheday.com/how-are-the-arrays-stored-in-the-memory/
+James H. (2008). Arrays. Jim's CS Topics. https://www.cs.utah.edu/~germain/PPS/Topics/arrays.html
