@@ -21,7 +21,9 @@
   - myArray[3] = 4
   - int temp = myArray[3]
 - Simple Example of an array
+  - Calculate the sum of an array
 - Arrays of Objects
+  - Array of Cats
 - Representation of Arrays in Memory in Java
   - Reference to array
     - Reference to array elements
@@ -55,3 +57,4 @@ Memory Model of Arrays: https://www.programcreek.com/2013/04/what-does-a-java-ar
 General Info About Arrays: https://www.cs.utah.edu/~germain/PPS/Topics/arrays.html
 
 
+Wikipedia (Jan., 2022). Gaussian blur. 
