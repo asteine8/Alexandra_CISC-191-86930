@@ -83,9 +83,10 @@ public class Boat
 	
 	/**
 	 * Sets a new color for the boat
+	 * @param newColor: the color to set the boat to
 	 */
 	public void setColor (Color newColor) {
-		newColor = color;		
+		color = newColor;
 	}
 	
 	/**
