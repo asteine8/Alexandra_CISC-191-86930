@@ -8,7 +8,7 @@ public class Sum {
 		
 		int runningTotal = 0;
 		
-		// Iterate through array
+		// Iterate through array in range [0,N)
 		for (int i = 0; i < array.length; i++) {
 			
 			// Add element to the running total

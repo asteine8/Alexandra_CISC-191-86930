@@ -36,3 +36,6 @@ public int[][] addOne(int[][] array) {
 public int numArguments(String... args) {
     return args.length;
 }
+
+numArguments("hello","world");
+numArguments("a","b","c","d");
