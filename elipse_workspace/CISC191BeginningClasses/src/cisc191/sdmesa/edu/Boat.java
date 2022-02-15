@@ -16,7 +16,7 @@ import java.awt.Color;
  * 
  * <<add more references here>>
  *  
- * Version/date: 
+ * Version/date: 0.5 - 2/5/2022
  * 
  * Responsibilities of class:
  * 
