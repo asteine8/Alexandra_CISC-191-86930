@@ -16,13 +16,12 @@ import java.awt.Color;
  * 
  * <<add more references here>>
  *  
- * Version/date: 0.5 - 2/5/2022
+ * Version/date: 0.5 - 2/15/2022
  * 
  * Responsibilities of class:
  * 
  */
-/**
- */
+
 public class Boat
 {
 	private String make;
