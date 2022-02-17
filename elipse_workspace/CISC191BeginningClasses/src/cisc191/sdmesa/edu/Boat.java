@@ -7,34 +7,34 @@ import java.awt.Color;
  * @author Shane Hage
  * @author Alexandra Steiner
  * 
- * Other contributors:
- * <<add additional contributors (mentors, tutors, friends) here, with contact information>>
- * 
  * References:
  * Morelli, R., & Walde, R. (2016). Java, Java, Java: Object-Oriented Problem Solving.
  * Retrieved from https://open.umn.edu/opentextbooks/textbooks/java-java-java-object-oriented-problem-solving
  * 
- * <<add more references here>>
+ * Java T Point (2021). Java String format(). javatpoint.com. Retrieved from: https://www.javatpoint.com/java-string-format
  *  
- * Version/date: 0.5 - 2/15/2022
+ * Version/date: 1.1 - 2/17/2022
  * 
  * Responsibilities of class:
+ * Implementation of the Boat class to match the specified UML diagram for this assignment. Contains make,
+ * color, speed, price, and serialNumber. Automatically assigns unique serial numbers to new boats and contains
+ * QOL getters, setters, and other general methods to support the class.
  * 
  */
-
-public class Boat
-{
+public class Boat {
 	private String make;
 	private Color color;
 	private int speed;
 	private int price;
 	private int serialNumber;
 	
-	// Iterates so we generate unique serial numbers
+	// A static serial number that iterates so we generate unique serial numbers
+	// Because its static, the value is independent of boat instance
 	private static int serialNumberIncrementer = 0;
 	
-	
 	/**
+	 * Constructs a boat with the provided make and color. Sets price and speed to their default values.
+	 * Assigns the boat a serial number
 	 * 
 	 * @param m The make of the Boat
 	 * @param c The color of the Boat
@@ -49,7 +49,8 @@ public class Boat
 	}
 	
 	/**
-	 * Default Boat Constructor
+	 * Default Boat Constructor:
+	 * Assigns make, color, speed, and price to their default values and gives the boat a serial number
 	 */
 	public Boat() {
 		make = null;
@@ -59,15 +60,12 @@ public class Boat
 		
 		serialNumber = createNewSerialNumber();
 	}
-	
-	
 
 	/**
-	 * Gets the maker of the boat
+	 * Gets the make of the boat
 	 * @return make
 	 */
-	public String getMake()
-	{
+	public String getMake() {
 		return make;
 	}
 
@@ -75,8 +73,7 @@ public class Boat
 	 * Gets the color of the boat
 	 * @return color
 	 */
-	public Color getColor()
-	{
+	public Color getColor() {
 		return color;
 	}
 	
@@ -92,8 +89,7 @@ public class Boat
 	 * Gets the speed of the boat
 	 * @return speed
 	 */
-	public int getSpeed()
-	{
+	public int getSpeed() {
 		return speed;
 	}
 	
@@ -105,10 +101,10 @@ public class Boat
 	}
 
 	/**
-	 * Decreases the speed by 1.
+	 * Decrements the speed by 1.
 	 */
 	public void slowDown() {
-		speed = speed - 1; 
+		speed--;
 	}
 	
 	/**

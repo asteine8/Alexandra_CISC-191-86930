@@ -55,12 +55,10 @@ import java.awt.Color;
  * and run the test again.
  * 
  */
-class TestObjectsAndClasses
-{
+class TestObjectsAndClasses {
 
 	@Test
-	void testNoArgConstructor()
-	{
+	void testNoArgConstructor() {
 		Boat boat = new Boat();
 		assertEquals(null, boat.getMake());
 		assertEquals(null, boat.getColor());
@@ -69,8 +67,7 @@ class TestObjectsAndClasses
 	}
 
 	@Test
-	void testConstructor()
-	{
+	void testConstructor() {
 		Boat boat = new Boat("Aqualina", Color.GREEN);
 		assertEquals("Aqualina", boat.getMake());
 		assertEquals(Color.GREEN, boat.getColor());
@@ -78,8 +75,7 @@ class TestObjectsAndClasses
 	}
 
 	@Test
-	void testMutators()
-	{
+	void testMutators() {
 		Boat boat = new Boat();
 		boat.setColor(Color.GREEN);
 		assertEquals(Color.GREEN, boat.getColor());
@@ -90,8 +86,7 @@ class TestObjectsAndClasses
 	}
 
 	@Test
-	void testAccumulatorMethods()
-	{
+	void testAccumulatorMethods() {
 		Boat boat = new Boat("BHM", Color.BLUE);
 		assertEquals(0, boat.getSpeed());
 		boat.speedUp();
@@ -105,8 +100,7 @@ class TestObjectsAndClasses
 	}
 
 	@Test
-	void testToString()
-	{
+	void testToString() {
 		Boat boat = new Boat("BSC", Color.GREEN);
 		assertEquals("Boat: make: BSC color: java.awt.Color[r=0,g=255,b=0]", boat.toString());
 		
@@ -115,8 +109,7 @@ class TestObjectsAndClasses
 	}
 
 	@Test
-	void testEquals()
-	{
+	void testEquals() {
 		Boat boat1 = new Boat("BMC", Color.GREEN);
 		Boat boat2 = new Boat("BMC", Color.GREEN);
 		Boat boat3 = new Boat("BMX", Color.GREEN);
@@ -130,8 +123,7 @@ class TestObjectsAndClasses
 	}
 
 	@Test
-	void testCreateNewSerialNumber()
-	{
+	void testCreateNewSerialNumber() {
 		// The boat class creates unique serial numbers for the boats
 		assertTrue(Boat.createNewSerialNumber() > 0);
       // Serial numbers are monotonically increasing
@@ -139,8 +131,7 @@ class TestObjectsAndClasses
 	}
 
 	@Test
-	void testSerialNumber()
-	{
+	void testSerialNumber() {
 		// Every boat gets a unique serial number when they are produced
 		Boat boat1 = new Boat("BMC", Color.GREEN);
 		assertTrue(boat1.getSerialNumber() > 0);
@@ -149,8 +140,7 @@ class TestObjectsAndClasses
 	}
 
 	@Test
-	void testboatStock()
-	{
+	void testboatStock() {
 		Boat boat1 = new Boat("BMC", Color.GREEN);
 		Boat boat2 = new Boat("BMX", Color.RED);
 		Boat boat3 = new Boat("UXB", Color.YELLOW);
@@ -176,8 +166,7 @@ class TestObjectsAndClasses
 	}
 
 	@Test
-	void testCreditCardPayment()
-	{
+	void testCreditCardPayment() {
 		Person person = new Person("Alex Keaton", "619-555-1212", "92111");
 		assertEquals("Alex Keaton 619-555-1212 92111", person.toString());
 		
@@ -189,6 +178,5 @@ class TestObjectsAndClasses
 				
 		CreditCardCharge charge = new CreditCardCharge(2020, 8, 14, boat, "BoatCo", card);
 		assertEquals("2020/8/14 4444111122223333 12/24 123 Alex Keaton BoatCo SpeedyBoat $19995", charge.toString());
-	}	
-
+	}
 }
