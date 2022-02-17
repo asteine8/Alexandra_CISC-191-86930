@@ -17,9 +17,9 @@ public class Person
 	
 	//Holds a person's name, phone number, and zip code
 	Person(String name, String phone, String zip) {
-		name = this.name;
-		phone = this.phone;
-		zip = this.zip;
+		this.name = name;
+		this.phone = phone;
+		this.zip = zip;
 	}
 
 	//Will return the person's name.
