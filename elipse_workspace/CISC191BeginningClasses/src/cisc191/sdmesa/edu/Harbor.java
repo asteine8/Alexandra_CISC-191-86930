@@ -9,7 +9,7 @@ package cisc191.sdmesa.edu;
  * Morelli, R., & Walde, R. (2016). Java, Java, Java: Object-Oriented Problem Solving.
  * Retrieved from https://open.umn.edu/opentextbooks/textbooks/java-java-java-object-oriented-problem-solving
  * 
- * Version/date: 1.0 - 2/17/2022
+ * Version/date: 1.2 - 2/20/2022
  * 
  * Responsibilities of class: A harbor that can hold an array of boat objects based on the specified value in the numBoats parameter in the constructor.
  * The getBoatAt method will return the boat at the specified slipNumbers parameter.
@@ -19,13 +19,13 @@ package cisc191.sdmesa.edu;
  */
 public class Harbor {
 
-	Boat[] boats;
+	private Boat boats[];
 	
 	/**
 	 * Constructor for Harbor. Initializes boats array with specifies number of empty boats
 	 * @param numBoats
 	 */
-	Harbor (int numBoats) {
+	public Harbor (int numBoats) {
 		boats = new Boat[numBoats];
 	}
 		

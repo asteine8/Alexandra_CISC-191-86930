@@ -13,7 +13,13 @@ import java.awt.Color;
  * 
  * Java T Point (2021). Java String format(). javatpoint.com. Retrieved from: https://www.javatpoint.com/java-string-format
  *  
- * Version/date: 1.1 - 2/17/2022
+ * Oracle (2020) Class Object. docs.oracle.com. Retrieved from https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html
+ * 
+ * Webucator (2022) How to Check Object Type in Java. webucator.com. Retrieved from https://www.webucator.com/article/how-to-check-object-type-in-java/
+ * 
+ * Sreedharan R. (2011) Convert or Cast a Simple Object to Object of another class. Stack Overflow. Retrieved from https://stackoverflow.com/questions/7256393/convert-or-cast-a-simple-object-to-object-of-another-class
+ * 
+ * Version/date: 1.2 - 2/20/2022
  * 
  * Responsibilities of class:
  * Implementation of the Boat class to match the specified UML diagram for this assignment. Contains make,
@@ -36,12 +42,12 @@ public class Boat {
 	 * Constructs a boat with the provided make and color. Sets price and speed to their default values.
 	 * Assigns the boat a serial number
 	 * 
-	 * @param m The make of the Boat
-	 * @param c The color of the Boat
+	 * @param make The make of the Boat
+	 * @param color The color of the Boat
 	 */
-	public Boat(String m, Color c) {
-		make = m;
-		color = c;
+	public Boat(String make, Color color) {
+		this.make = make;
+		this.color = color;
 		speed = 0;
 		price = -1;
 		
@@ -141,15 +147,29 @@ public class Boat {
 	}
 	
 	/**
-	 * Compares make and color between two boats and returns true if the makes and colors match
-	 * Returns false if the boat or its color / make are null
+	 * Compares make and color between the provided object and this boat and returns true if the makes and 
+	 * colors match. Returns false if the boat or its color / make are null or if the provided object is
+	 * not a Boat
 	 * 
-	 * @param otherBoat: the other boat to compare with this boat
-	 * @return true if the makes and colors match
+	 * Referenced for override: https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html
+	 * 
+	 * Referenced for instanceof: https://www.webucator.com/article/how-to-check-object-type-in-java/
+	 * 
+	 * Referenced for object casting: https://stackoverflow.com/questions/7256393/convert-or-cast-a-simple-object-to-object-of-another-class
+	 * 
+	 * @param obj: an object to be casted into a boat object and compared with another boat
+	 * @return true if the obj is of the Boat type and its make and color match this boat
 	 */
-	public boolean equals (Boat otherBoat) {
-		// return false if *SOMEONE* passes us a null boat
-		if (otherBoat == null) return false;
+	@Override
+	public boolean equals (Object obj) {
+		// return false if *SOMEONE* passes us a null object
+		if (obj == null) return false;
+		
+		// Check if the provided object is actually a boat. Return false if its not
+		if (!(obj instanceof Boat)) return false;
+		
+		// Cast the provided object as a Boat
+		Boat otherBoat = (Boat) obj;
 		
 		// return false if *SOMEONE* passes us an empty boat
 		if (otherBoat.getColor() == null || otherBoat.getMake() == null) return false;

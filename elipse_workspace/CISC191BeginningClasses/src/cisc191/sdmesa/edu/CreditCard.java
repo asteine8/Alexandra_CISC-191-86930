@@ -9,7 +9,7 @@ package cisc191.sdmesa.edu;
  * Morelli, R., & Walde, R. (2016). Java, Java, Java: Object-Oriented Problem Solving.
  * Retrieved from https://open.umn.edu/opentextbooks/textbooks/java-java-java-object-oriented-problem-solving
  * 
- * Version/date: 1.1 - 2/17/2022
+ * Version/date: 1.2 - 2/20/2022
  * 
  * Responsibilities of class:
  * A credit card class that stores general information about the card and implements a formatted
@@ -24,16 +24,16 @@ public class CreditCard {
 	
 	/**
 	 * Constructs a credit card
-	 * @param num: the credit card number
-	 * @param exp: the credit card's expiration date
-	 * @param cvv: the security code
-	 * @param p: the card holder
+	 * @param number: the credit card number
+	 * @param expiration: the credit card's expiration date
+	 * @param securityCode: the security code
+	 * @param cardHolder: the card holder
 	 */
-	public CreditCard(String num, String exp, String cvv, Person p) {
-		number = num;
-		expiration = exp;
-		securityCode = cvv;
-		cardHolder = p;
+	public CreditCard(String number, String expiration, String securityCode, Person cardHolder) {
+		this.number = number;
+		this.expiration = expiration;
+		this.securityCode = securityCode;
+		this.cardHolder = cardHolder;
 	}
 	
 	/**

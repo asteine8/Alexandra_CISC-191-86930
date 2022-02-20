@@ -9,7 +9,7 @@ package cisc191.sdmesa.edu;
  * Morelli, R., & Walde, R. (2016). Java, Java, Java: Object-Oriented Problem Solving.
  * Retrieved from https://open.umn.edu/opentextbooks/textbooks/java-java-java-object-oriented-problem-solving
  * 
- * Version/date: 1.0 - 2/17/2022
+ * Version/date: 1.2 - 2/20/2022
  * 
  * Responsibilities of class: Holds a person's name, phone number and zip code. Can return the person's name through the getName method and
  * return all the person's information using the toString method.
@@ -27,7 +27,7 @@ public class Person {
 	 * @param phone: the phone number for the person
 	 * @param zip: the zipcode where the person lives
 	 */
-	Person(String name, String phone, String zip) {
+	public Person(String name, String phone, String zip) {
 		this.name = name;
 		this.phone = phone;
 		this.zip = zip;
