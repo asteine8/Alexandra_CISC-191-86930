@@ -22,10 +22,7 @@ import java.awt.Color;
  * method that will return the number of wheels for a cycle. getDescription will return the color, number of wheels and make of the cycle.
  * 
  */
-public abstract class Cycle  {	
-	protected String make;
-	protected Color color;
-	protected int numWheels;
+public abstract class Cycle {
 	
 	/**
 	 * establishes the make of the cycle
@@ -66,6 +63,6 @@ public abstract class Cycle  {
 	 * @return
 	 */
 	public String getDescription() {
-		return String.format("%s %d wheels %s", make, numWheels, color.toString());
+		return String.format("%s %d wheels %s", getMake(), getNumberOfWheels(), getColor().toString());
 	}
 }

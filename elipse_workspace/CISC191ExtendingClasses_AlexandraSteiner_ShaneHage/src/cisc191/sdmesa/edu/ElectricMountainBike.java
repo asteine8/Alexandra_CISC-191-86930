@@ -101,7 +101,7 @@ public class ElectricMountainBike extends Bicycle implements Gearable, Movable, 
 		if (bike.make == null || bike.color == null) return false;
 		
 		// Check if the makes and colors match
-		if (bike.make == super.make && bike.color.equals(super.color)) return true;
+		if (bike.make.equals(super.make) && bike.color.equals(super.color)) return true;
 		else return false;
 	}
 	

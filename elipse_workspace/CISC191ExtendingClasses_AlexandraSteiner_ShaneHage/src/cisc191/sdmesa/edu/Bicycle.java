@@ -23,6 +23,10 @@ import java.awt.Color;
  */
 public class Bicycle extends Cycle {
 	
+	private String make;
+	private Color color;
+	private int numWheels;
+	
 	/**
 	 * establishes the the make as well as the number of wheels of the bicycle
 	 * @param newMake
@@ -30,7 +34,8 @@ public class Bicycle extends Cycle {
 	public Bicycle(String newMake) {
 		super(newMake);
 		
-		super.numWheels = 2;
+		make = newMake;
+		numWheels = 2;
 	}
 
 	/**
@@ -39,7 +44,7 @@ public class Bicycle extends Cycle {
 	 */
 	@Override
 	public int getNumberOfWheels() {
-		return super.numWheels;
+		return numWheels;
 	}
 	
 	/**
@@ -48,7 +53,7 @@ public class Bicycle extends Cycle {
 	 */
 	@Override
 	public Color getColor() {
-		return super.color;
+		return color;
 	}
 	
 	/**
@@ -57,6 +62,6 @@ public class Bicycle extends Cycle {
 	 */
 	@Override
 	public void setColor(Color newColor) {
-		super.color = newColor;
+		color = newColor;
 	}
 }
