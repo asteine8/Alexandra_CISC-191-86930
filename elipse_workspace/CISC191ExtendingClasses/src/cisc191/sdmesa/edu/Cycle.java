@@ -28,13 +28,17 @@ import java.awt.Color;
 
 //TODO: Implement and comment all IS-A (inheritance) relationships
 
-public abstract class Cycle
-{
-	// TODO: Implement and comment HAS-A relationships separately
+public abstract class Cycle  {	
+	protected String make;
+	protected Color color;
+	protected int numWheels;
 	
-	public Cycle(String newMake)
-	{
-		// TODO
+	/**
+	 * 
+	 * @param newMake
+	 */
+	public Cycle(String newMake) {
+		make = newMake;
 	}
 
 	abstract int getNumberOfWheels();
@@ -51,20 +55,25 @@ public abstract class Cycle
 	 * @param newColor
 	 */
 	abstract void setColor(Color newColor);
+	
+	/**
+	 * 
+	 * @return
+	 */
 
 	/**
 	 * 
 	 * @return make or brand that was set when the bike was made
 	 */
-	final String getMake()
-	{
-		// TODO
-		return null;
+	final String getMake() {
+		return make;
 	}
 
-	public String getDescription()
-	{
-		// TODO
-		return null;
+	/**
+	 * 
+	 * @return
+	 */
+	public String getDescription() {
+		return String.format("%s %d wheels %s", make, numWheels, color.toString());
 	}
 }

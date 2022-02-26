@@ -22,7 +22,8 @@ package cisc191.sdmesa.edu;
  */
 /**
  */
-public interface Movable
+interface Movable
 {
-
+	int getSpeed();
+	
 }

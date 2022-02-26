@@ -67,66 +67,66 @@ class TestObjectsAndClasses
 		assertEquals(Color.RED, cycle.getColor());
 	}
 
-//	@Test
-//	void testAbstractInheritance2()
-//	{
-//		Bicycle bike = new ElectricMountainBike("BMC");
-//		assertEquals("BMC", bike.getMake());
-//		assertEquals(2, bike.getNumberOfWheels());
-//		bike.setColor(Color.GREEN);
-//		assertEquals(Color.GREEN, bike.getColor());
-//		assertEquals("BMC 2 wheels java.awt.Color[r=0,g=255,b=0]", bike.getDescription());
-//	}
+	@Test
+	void testAbstractInheritance2()
+	{
+		Bicycle bike = new ElectricMountainBike("BMC");
+		assertEquals("BMC", bike.getMake());
+		assertEquals(2, bike.getNumberOfWheels());
+		bike.setColor(Color.GREEN);
+		assertEquals(Color.GREEN, bike.getColor());
+		assertEquals("BMC 2 wheels java.awt.Color[r=0,g=255,b=0]", bike.getDescription());
+	}
 
-//	@Test
-//	void testMovable()
-//	{
-//		Movable vehicle1 = new ElectricMountainBike("E1");
-//		assertEquals(0, vehicle1.getSpeed());
-//		assertEquals("E1", ((Cycle) vehicle1).getMake());
-//	}
+	@Test
+	void testMovable()
+	{
+		Movable vehicle1 = new ElectricMountainBike("E1");
+		assertEquals(0, vehicle1.getSpeed());
+		assertEquals("E1", ((Cycle) vehicle1).getMake());
+	}
 
-//	@Test
-//	void testGearable()
-//	{
-//		Gearable vehicle2 = new ElectricMountainBike("E2");
-//		assertEquals(1, vehicle2.getGear());
-//		assertEquals("E2", ((Cycle) vehicle2).getMake());
-//	}
+	@Test
+	void testGearable()
+	{
+		Gearable vehicle2 = new ElectricMountainBike("E2");
+		assertEquals(1, vehicle2.getGear());
+		assertEquals("E2", ((Cycle) vehicle2).getMake());
+	}
 
-//	@Test
-//	void testElectric()
-//	{
-//		Electric vehicle3 = new ElectricMountainBike("E3");
-//		assertEquals(0, vehicle3.getCharge());
-//		vehicle3.charge(100);
-//		assertEquals(100, vehicle3.getCharge());
-//		assertEquals("E3", ((Cycle) vehicle3).getMake());
-//	}
+	@Test
+	void testElectric()
+	{
+		Electric vehicle3 = new ElectricMountainBike("E3");
+		assertEquals(0, vehicle3.getCharge());
+		vehicle3.charge(100);
+		assertEquals(100, vehicle3.getCharge());
+		assertEquals("E3", ((Cycle) vehicle3).getMake());
+	}
 
-//	@Test
-//	void testToString()
-//	{
-//		Cycle bike = new ElectricMountainBike("BMC");
-//		bike.setColor(Color.GREEN);
-//		assertEquals("ElectricMountainBike: make: BMC wheels: 2 color: java.awt.Color[r=0,g=255,b=0]", bike.toString());
-//	}
+	@Test
+	void testToString()
+	{
+		Cycle bike = new ElectricMountainBike("BMC");
+		bike.setColor(Color.GREEN);
+		assertEquals("ElectricMountainBike: make: BMC wheels: 2 color: java.awt.Color[r=0,g=255,b=0]", bike.toString());
+	}
 
-//	@Test
-//	void testEquals()
-//	{
-//		Cycle bike1 = new ElectricMountainBike("BMC", Color.GREEN);
-//		Cycle bike2 = new ElectricMountainBike("BMC", Color.GREEN);
-//		Cycle bike3 = new ElectricMountainBike("BMX", Color.GREEN);
-//		Cycle bike4 = new ElectricMountainBike("BMC", Color.RED);
-//		Cycle cycle = new Unicycle("UniToo");
-//		assertEquals(true, bike1.equals(bike1));
-//		assertEquals(true, bike1.equals(bike2));
-//		assertEquals(false, bike1.equals(bike3));
-//		assertEquals(false, bike1.equals(bike4));
-//		assertEquals(false, bike1.equals(null));
-//		assertEquals(false, bike1.equals("BMC"));
-//		assertEquals(false, bike1.equals(cycle));
-//	}
+	@Test
+	void testEquals()
+	{
+		Cycle bike1 = new ElectricMountainBike("BMC", Color.GREEN);
+		Cycle bike2 = new ElectricMountainBike("BMC", Color.GREEN);
+		Cycle bike3 = new ElectricMountainBike("BMX", Color.GREEN);
+		Cycle bike4 = new ElectricMountainBike("BMC", Color.RED);
+		Cycle cycle = new Unicycle("UniToo");
+		assertEquals(true, bike1.equals(bike1));
+		assertEquals(true, bike1.equals(bike2));
+		assertEquals(false, bike1.equals(bike3));
+		assertEquals(false, bike1.equals(bike4));
+		assertEquals(false, bike1.equals(null));
+		assertEquals(false, bike1.equals("BMC"));
+		assertEquals(false, bike1.equals(cycle));
+	}
 
 }
