@@ -1,5 +1,7 @@
 package cisc191.sdmesa.edu;
 
+import java.awt.Color;
+
 /**
  * Lead Author(s):
  * @author 
@@ -23,8 +25,28 @@ package cisc191.sdmesa.edu;
 
  // TODO: Implement and comment all IS-A (inheritance) relationships
  
-public class Unicycle
+public class Unicycle extends Cycle
 {
 	// TODO: Implement and comment HAS-A relationships separately
 	
+	public Unicycle (String newMake) {
+		super(newMake);
+		super.numWheels = 1;
+	}
+
+	@Override
+	void setColor(Color newColor) {
+		super.color = newColor;
+	}
+
+	@Override
+	public Color getColor () {
+		return color;
+	}
+
+	@Override
+	public int getNumberOfWheels () {
+		return 1;
+	}
+
 }

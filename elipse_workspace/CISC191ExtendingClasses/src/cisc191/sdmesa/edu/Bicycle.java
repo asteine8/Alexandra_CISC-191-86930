@@ -1,5 +1,7 @@
 package cisc191.sdmesa.edu;
 
+import java.awt.Color;
+
 /**
  * Lead Author(s):
  * @author 
@@ -23,8 +25,41 @@ package cisc191.sdmesa.edu;
 
 // TODO: Implement and comment all IS-A (inheritance) and IS (implements) relationships separately
 
-public class Bicycle
-{
-	// TODO: Implement and comment HAS-A relationships separately
+public class Bicycle extends Cycle {
+	
+	/**
+	 * 
+	 * @param newMake
+	 */
+	public Bicycle(String newMake) {
+		super(newMake);
+		
+		super.numWheels = 2;
+	}
+
+	/**
+	 * 
+	 */
+	@Override
+	int getNumberOfWheels() {
+		return super.numWheels;
+	}
+	
+	/**
+	 * 
+	 */
+	@Override
+	Color getColor() {
+		return super.color;
+	}
+	
+	/**
+	 * 
+	 */
+	@Override
+	void setColor(Color newColor) {
+		super.color = newColor;
+	}
+	
 
 }
