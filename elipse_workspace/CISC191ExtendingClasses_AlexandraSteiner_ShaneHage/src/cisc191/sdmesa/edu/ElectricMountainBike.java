@@ -4,27 +4,23 @@ import java.awt.Color;
 
 /**
  * Lead Author(s):
- * @author 
- * @author 
- * <<add additional lead authors here, with a full first and last name>>
+ * @author Alexandra Steiner
+ * @author Shane Hage
  * 
  * Other contributors:
- * <<add additional contributors (mentors, tutors, friends) here, with contact information>>
  * 
  * References:
  * Morelli, R., & Walde, R. (2016). Java, Java, Java: Object-Oriented Problem Solving.
  * Retrieved from https://open.umn.edu/opentextbooks/textbooks/java-java-java-object-oriented-problem-solving
  * 
- * <<add more references here>>
- *  
- * Version/date: 
+ * w3schools (2022). Java Interface. w3schools.com. Retrieved from: https://www.w3schools.com/java/java_interface.asp
+ * 
+ * Version/date: 1.0 - 2/25/22
  * 
  * Responsibilities of class:
- * ElectricMountainBike is a Bicyle that is Movable, Gearable, and Electric
+ * ElectricMountainBike is a Bicyle that implements the Movable, Gearable, and Electric interfaces. ElectricMountainBike
+ * also has toString and equals methods for general utility.
  */
-
-// TODO: Implement and comment all IS-A (inheritance) and IS (implements) relationships separately
-
 public class ElectricMountainBike extends Bicycle implements Gearable, Movable, Electric {
 	
 	private int charge = 0;
@@ -74,17 +70,24 @@ public class ElectricMountainBike extends Bicycle implements Gearable, Movable, 
 	 * @return gear
 	 */
 	public int getGear() {
-		// TODO Auto-generated method stub
 		return gear;
 	}
 	
 	/**
-	 * 
+	 * Charges the bike by the specified amount
+	 * @param amountToCharge: how much to charge the bike
 	 */
 	public void charge(int amountToCharge) {
 		charge += amountToCharge;
 	}
 	
+	/**
+	 * Compares the provided object with this bike and returns true if the makes and colors match
+	 * Will return false if the provided object is null, its fields are null, or if it is not an
+	 * instance of the ElectricMountainBike class
+	 * 
+	 * @param obj: the object to compare with this electric mountain bike
+	 */
 	@Override
 	public boolean equals(Object obj) {
 		// Check if obj is null
@@ -102,6 +105,11 @@ public class ElectricMountainBike extends Bicycle implements Gearable, Movable, 
 		else return false;
 	}
 	
+	/**
+	 * Converts the ElectricMountainBike into a formatted string that represents the ElectricMountainBike
+	 * 
+	 * @return the formatted string
+	 */
 	@Override
 	public String toString() {
 		return String.format("ElectricMountainBike: make: %s wheels: %d color: %s", super.make, super.numWheels, super.color.toString());

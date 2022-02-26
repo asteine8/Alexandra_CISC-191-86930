@@ -22,7 +22,7 @@ import org.junit.jupiter.api.Test;
  * JUnit 5 user guide. JUnit 5. 
  * https://junit.org/junit5/docs/current/user-guide/
  * 
- * Version/date: 1.0  
+ * Version/date: 1.0 - 2/25/22
  * 
  * Responsibilities of class:
  * Test class and methods to support a push bike shop
@@ -55,11 +55,9 @@ import org.junit.jupiter.api.Test;
  * 
  */
 
-class TestObjectsAndClasses
-{
+class TestObjectsAndClasses {
 	@Test
-	void testAbstractInheritance1()
-	{
+	void testAbstractInheritance1() {
 		Cycle cycle = new Unicycle("Uni1");
 		assertEquals("Uni1", cycle.getMake());
 		assertEquals(1, cycle.getNumberOfWheels());
@@ -68,8 +66,7 @@ class TestObjectsAndClasses
 	}
 
 	@Test
-	void testAbstractInheritance2()
-	{
+	void testAbstractInheritance2() {
 		Bicycle bike = new ElectricMountainBike("BMC");
 		assertEquals("BMC", bike.getMake());
 		assertEquals(2, bike.getNumberOfWheels());
@@ -79,24 +76,21 @@ class TestObjectsAndClasses
 	}
 
 	@Test
-	void testMovable()
-	{
+	void testMovable() {
 		Movable vehicle1 = new ElectricMountainBike("E1");
 		assertEquals(0, vehicle1.getSpeed());
 		assertEquals("E1", ((Cycle) vehicle1).getMake());
 	}
 
 	@Test
-	void testGearable()
-	{
+	void testGearable() {
 		Gearable vehicle2 = new ElectricMountainBike("E2");
 		assertEquals(1, vehicle2.getGear());
 		assertEquals("E2", ((Cycle) vehicle2).getMake());
 	}
 
 	@Test
-	void testElectric()
-	{
+	void testElectric() {
 		Electric vehicle3 = new ElectricMountainBike("E3");
 		assertEquals(0, vehicle3.getCharge());
 		vehicle3.charge(100);
@@ -105,16 +99,14 @@ class TestObjectsAndClasses
 	}
 
 	@Test
-	void testToString()
-	{
+	void testToString() {
 		Cycle bike = new ElectricMountainBike("BMC");
 		bike.setColor(Color.GREEN);
 		assertEquals("ElectricMountainBike: make: BMC wheels: 2 color: java.awt.Color[r=0,g=255,b=0]", bike.toString());
 	}
 
 	@Test
-	void testEquals()
-	{
+	void testEquals() {
 		Cycle bike1 = new ElectricMountainBike("BMC", Color.GREEN);
 		Cycle bike2 = new ElectricMountainBike("BMC", Color.GREEN);
 		Cycle bike3 = new ElectricMountainBike("BMX", Color.GREEN);

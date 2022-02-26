@@ -4,31 +4,27 @@ import java.awt.Color;
 
 /**
  * Lead Author(s):
- * @author 
- * @author 
- * <<add additional lead authors here, with a full first and last name>>
+ * @author Alexandra Steiner
+ * @author Shane Hage
  * 
  * Other contributors:
- * <<add additional contributors (mentors, tutors, friends) here, with contact information>>
  * 
  * References:
  * Morelli, R., & Walde, R. (2016). Java, Java, Java: Object-Oriented Problem Solving.
  * Retrieved from https://open.umn.edu/opentextbooks/textbooks/java-java-java-object-oriented-problem-solving
  * 
- * <<add more references here>>
+ * Napmi (2013) How to access Abstract superclass instance variable. stackoverflow. 
+ * Retrieved from: https://stackoverflow.com/questions/20051488/how-to-access-abstract-superclass-instance-variable
  *  
- * Version/date: 
+ * Version/date: 1.0 - 2/25/22
  * 
  * Responsibilities of class:
- * A a Bicycle is a Cycle with two wheels
+ * A Bicycle is a Cycle with two wheels. Implements abstact methods from the Cycle superclass. 
  */
-
-// TODO: Implement and comment all IS-A (inheritance) and IS (implements) relationships separately
-
 public class Bicycle extends Cycle {
 	
 	/**
-	 * 
+	 * establishes the the make as well as the number of wheels of the bicycle
 	 * @param newMake
 	 */
 	public Bicycle(String newMake) {
@@ -38,28 +34,29 @@ public class Bicycle extends Cycle {
 	}
 
 	/**
-	 * 
+	 * returns the number of wheels on a bicycle
+	 * @return the number of wheels
 	 */
 	@Override
-	int getNumberOfWheels() {
+	public int getNumberOfWheels() {
 		return super.numWheels;
 	}
 	
 	/**
-	 * 
+	 * returns the color of the bicycle
+	 * @return the bicycle's color
 	 */
 	@Override
-	Color getColor() {
+	public Color getColor() {
 		return super.color;
 	}
 	
 	/**
-	 * 
+	 * changes the color of the bicycle
+	 * @param newColor: the new color of the bicycle
 	 */
 	@Override
-	void setColor(Color newColor) {
+	public void setColor(Color newColor) {
 		super.color = newColor;
 	}
-	
-
 }

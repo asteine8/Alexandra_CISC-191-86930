@@ -4,73 +4,65 @@ import java.awt.Color;
 
 /**
  * Lead Author(s):
- * @author 
- * @author 
- * <<add additional lead authors here, with a full first and last name>>
+ * @author Alexandra Steiner
+ * @author Shane Hage
  * 
  * Other contributors:
- * <<add additional contributors (mentors, tutors, friends) here, with contact information>>
  * 
  * References:
  * Morelli, R., & Walde, R. (2016). Java, Java, Java: Object-Oriented Problem Solving.
  * Retrieved from https://open.umn.edu/opentextbooks/textbooks/java-java-java-object-oriented-problem-solving
  * 
- * <<add more references here>>
+ * Miglani G. (October, 2021). final Keyword in Java. geeksforgeeks. Retrieved from: https://www.geeksforgeeks.org/final-keyword-in-java/
  *  
- * Version/date: 
+ * Version/date: 1.0 - 2/25/22
  * 
- * Responsibilities of class:
+ * Responsibilities of class: Implements methods and fields related to a specific cycle. setMake and setColor will set the color and make of the cycle.
+ * constructor establishes the make of the cycle. getmake and getColor will return the make and color of the cycle. getNumberOfWheels is a abstract 
+ * method that will return the number of wheels for a cycle. getDescription will return the color, number of wheels and make of the cycle.
  * 
  */
-/**
- * Only change sections that are marked with TODO
- */
-
-//TODO: Implement and comment all IS-A (inheritance) relationships
-
 public abstract class Cycle  {	
 	protected String make;
 	protected Color color;
 	protected int numWheels;
 	
 	/**
-	 * 
+	 * establishes the make of the cycle
 	 * @param newMake
 	 */
 	public Cycle(String newMake) {
 		make = newMake;
 	}
 
+	/**
+	 * abstract method that will return the number of wheels for the cycle
+	 */
 	abstract int getNumberOfWheels();
 
 	/**
-	 * 
-	 * @return the color of the bike; can be null
+	 * returns the color of the cycle
+	 * @return the color of the cycle; can be null
 	 */
 	abstract Color getColor();
 
 	/**
-	 * Changes the color of the bike
+	 * Changes the color of the cycle
 	 * 
 	 * @param newColor
 	 */
 	abstract void setColor(Color newColor);
-	
-	/**
-	 * 
-	 * @return
-	 */
 
 	/**
-	 * 
-	 * @return make or brand that was set when the bike was made
+	 * returns the make of the cycle
+	 * @return make or brand that was set when the cycle was made
 	 */
 	final String getMake() {
 		return make;
 	}
 
 	/**
-	 * 
+	 * returns the color, number of wheels and make of the cycle as a toString
 	 * @return
 	 */
 	public String getDescription() {
