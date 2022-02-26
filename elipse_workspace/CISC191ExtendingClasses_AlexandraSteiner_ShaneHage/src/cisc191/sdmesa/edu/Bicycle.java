@@ -16,16 +16,17 @@ import java.awt.Color;
  * Napmi (2013) How to access Abstract superclass instance variable. stackoverflow. 
  * Retrieved from: https://stackoverflow.com/questions/20051488/how-to-access-abstract-superclass-instance-variable
  *  
- * Version/date: 1.0 - 2/25/22
+ * Version/date: 1.1 - 2/26/22
  * 
  * Responsibilities of class:
  * A Bicycle is a Cycle with two wheels. Implements abstact methods from the Cycle superclass. 
  */
+
+//[Is-A] Bicycle is a Cycle
 public class Bicycle extends Cycle {
 	
-	private String make;
-	private Color color;
-	private int numWheels;
+	private Color color; // [Has-A] Bicycle has a color
+	private final int numWheels = 2;
 	
 	/**
 	 * establishes the the make as well as the number of wheels of the bicycle
@@ -33,15 +34,14 @@ public class Bicycle extends Cycle {
 	 */
 	public Bicycle(String newMake) {
 		super(newMake);
-		
-		make = newMake;
-		numWheels = 2;
 	}
 
 	/**
 	 * returns the number of wheels on a bicycle
 	 * @return the number of wheels
 	 */
+	
+	// [Is-A] Bicycle is a Cycle. This method implements the abstract getNumberOfWheels() method in Cycle
 	@Override
 	public int getNumberOfWheels() {
 		return numWheels;
@@ -51,6 +51,8 @@ public class Bicycle extends Cycle {
 	 * returns the color of the bicycle
 	 * @return the bicycle's color
 	 */
+	
+	// [Is-A] Bicycle is a Cycle. This method implements the abstract getColor() method in Cycle
 	@Override
 	public Color getColor() {
 		return color;
@@ -60,6 +62,8 @@ public class Bicycle extends Cycle {
 	 * changes the color of the bicycle
 	 * @param newColor: the new color of the bicycle
 	 */
+	
+	// [Is-A] Bicycle is a Cycle. This method implements the abstract setColor(Color newColor) method in Cycle
 	@Override
 	public void setColor(Color newColor) {
 		color = newColor;

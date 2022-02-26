@@ -15,12 +15,15 @@ import java.awt.Color;
  * 
  * w3schools (2022). Java Interface. w3schools.com. Retrieved from: https://www.w3schools.com/java/java_interface.asp
  * 
- * Version/date: 1.0 - 2/25/22
+ * Version/date: 1.1 - 2/26/22
  * 
  * Responsibilities of class:
  * ElectricMountainBike is a Bicyle that implements the Movable, Gearable, and Electric interfaces. ElectricMountainBike
  * also has toString and equals methods for general utility.
  */
+
+// [Is-A] ElectricMountainBike is a Bicycle
+// [Implement] ElectricMountainBike implements the Gearable, Movable, and Electric interfaces
 public class ElectricMountainBike extends Bicycle implements Gearable, Movable, Electric {
 	
 	private int charge = 0;
@@ -43,7 +46,7 @@ public class ElectricMountainBike extends Bicycle implements Gearable, Movable, 
 	public ElectricMountainBike(String newMake, Color newColor) {
 		super(newMake);
 		
-		super.color = newColor;
+		setColor(newColor);
 	}
 
 	/**
@@ -88,6 +91,8 @@ public class ElectricMountainBike extends Bicycle implements Gearable, Movable, 
 	 * 
 	 * @param obj: the object to compare with this electric mountain bike
 	 */
+	
+	// [Is-A] ElectricMountainBike is an Object. This method overrides the equals(Object obj) method in the Object class
 	@Override
 	public boolean equals(Object obj) {
 		// Check if obj is null
@@ -98,10 +103,10 @@ public class ElectricMountainBike extends Bicycle implements Gearable, Movable, 
 		
 		ElectricMountainBike bike = (ElectricMountainBike)obj;
 		// Check if the fields for make and color are null
-		if (bike.make == null || bike.color == null) return false;
+		if (bike.getMake() == null || bike.getColor() == null) return false;
 		
 		// Check if the makes and colors match
-		if (bike.make.equals(super.make) && bike.color.equals(super.color)) return true;
+		if (bike.getMake().equals(super.getMake()) && bike.getColor().equals(super.getColor())) return true;
 		else return false;
 	}
 	
@@ -110,8 +115,10 @@ public class ElectricMountainBike extends Bicycle implements Gearable, Movable, 
 	 * 
 	 * @return the formatted string
 	 */
+	
+	// [Is-A] ElectricMountainBike is an Object. This method overrides the toString() method in the Object class
 	@Override
 	public String toString() {
-		return String.format("ElectricMountainBike: make: %s wheels: %d color: %s", super.make, super.numWheels, super.color.toString());
+		return String.format("ElectricMountainBike: make: %s wheels: %d color: %s", super.getMake(), super.getNumberOfWheels(), super.getColor().toString());
 	}
 }
