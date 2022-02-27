@@ -11,11 +11,13 @@ package cisc191.sdmesa.edu;
  * Morelli, R., & Walde, R. (2016). Java, Java, Java: Object-Oriented Problem Solving.
  * Retrieved from https://open.umn.edu/opentextbooks/textbooks/java-java-java-object-oriented-problem-solving
  *  
- * Version/date: 1.0 - 2/25/22
+ * Version/date: 1.2 - 2/27/22
  * 
  * Responsibilities of class:
  * Specifies methods relating to moving objects
  */
+
+// [Implements] Movable is implemented by ElectricMountainBike
 interface Movable {
 	/**
 	 * @return the speed that the object is moving at

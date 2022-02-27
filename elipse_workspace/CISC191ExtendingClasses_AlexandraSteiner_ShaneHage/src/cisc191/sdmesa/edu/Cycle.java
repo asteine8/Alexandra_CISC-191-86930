@@ -15,17 +15,18 @@ import java.awt.Color;
  * 
  * Miglani G. (October, 2021). final Keyword in Java. geeksforgeeks. Retrieved from: https://www.geeksforgeeks.org/final-keyword-in-java/
  *  
- * Version/date: 1.0 - 2/25/22
+ * Version/date: 1.2 - 2/27/22
  * 
  * Responsibilities of class: Implements methods and fields related to a specific cycle. setMake and setColor will set the color and make of the cycle.
  * constructor establishes the make of the cycle. getmake and getColor will return the make and color of the cycle. getNumberOfWheels is a abstract 
  * method that will return the number of wheels for a cycle. getDescription will return the color, number of wheels and make of the cycle.
  * 
  */
-public abstract class Cycle  {	
-	protected String make;
-	protected Color color;
-	protected int numWheels;
+
+// [Is-A] A Cycle is an Object
+public abstract class Cycle  {
+	
+	private String make;
 	
 	/**
 	 * establishes the make of the cycle
@@ -66,6 +67,6 @@ public abstract class Cycle  {
 	 * @return
 	 */
 	public String getDescription() {
-		return String.format("%s %d wheels %s", make, numWheels, color.toString());
+		return String.format("%s %d wheels %s", getMake(), getNumberOfWheels(), getColor().toString());
 	}
 }
