@@ -21,5 +21,6 @@
       - [f] Retrieve expression(s) from the file-path
       - [w|write] the output is written to the file if a file path is provided
       - [h|help] displays the help message
+      - 
     - If no path or string input is provided, show a help message
 - 
