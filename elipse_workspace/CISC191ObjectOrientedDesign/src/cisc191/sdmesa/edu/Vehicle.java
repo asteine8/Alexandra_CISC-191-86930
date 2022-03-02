@@ -2,26 +2,20 @@ package cisc191.sdmesa.edu;
 
 /**
  * Lead Author(s):
- * @author 
- * @author 
- * <<add additional lead authors here, with a full first and last name>>
+ * @author Alexandra Steiner
  * 
  * Other contributors:
- * <<add additional contributors (mentors, tutors, friends) here, with contact information>>
  * 
  * References:
  * Morelli, R., & Walde, R. (2016). Java, Java, Java: Object-Oriented Problem Solving.
  * Retrieved from https://open.umn.edu/opentextbooks/textbooks/java-java-java-object-oriented-problem-solving
  * 
- * <<add more references here>>
- *  
- * Version/date: 
+ * Version/date: 1.0 - 3/1/22
  * 
  * Responsibilities of class:
- * 
+ * A Vehicle class that record the manufacturer, miles, price, number of seats, and options for the vehicle. Has QOL
+ * getter methods.
  */
-
-// TODO: Implement and comment all IS-A and IS relationships separately
 
 public class Vehicle {
 	
@@ -29,11 +23,16 @@ public class Vehicle {
 	private int miles;
 	private int price;
 	private int numSeats;
-	private Option options[];
+	private Option options[]; // [Has-A] Vehicle has an array of Option
 	
 	/**
+	 * Constructor for the Vehicle Class
 	 * 
-	 * 
+	 * @param manufacturerName: The name of the manufacturer that made the vehicle
+	 * @param miles: How many miles are on vehicle
+	 * @param price: How much is the vehicle worth
+	 * @param numSeats: How many seats are in the vehicle
+	 * @param options: An array of Option objects that store the options for the vehicle
 	 */
 	public Vehicle(String manufacturerName, int miles, int price, int numSeats, Option[] options) {
 		this.manufacturerName = manufacturerName;
@@ -52,23 +51,42 @@ public class Vehicle {
 		
 	}
 	
-	
+	/**
+	 * Gets the name of the manufacturer that made the vehicle
+	 * @return the name of the manufacturer
+	 */
 	public String getManufacturerName() {
 		return manufacturerName;
 	}
 	
+	/**
+	 * Gets the number of miles on the vehicle
+	 * @return the number of miles on the vehicle
+	 */
 	public int getMilesOnVehicle() {
 		return miles;
 	}
 	
+	/**
+	 * Gets the price of the vehicle
+	 * @return the price of the vehicle
+	 */
 	public int getPrice() {
 		return price;
 	}
 	
+	/**
+	 * Gets the number of seats in the vehicle
+	 * @return the number of seats in the vehicle
+	 */
 	public int getNumberOfSeats() {
 		return numSeats;
 	}
 	
+	/**
+	 * Gets the options that come with the vehicle
+	 * @return a list of options that come with the vehicle
+	 */
 	public Option[] getOptions() {
 		return options.clone();
 	}

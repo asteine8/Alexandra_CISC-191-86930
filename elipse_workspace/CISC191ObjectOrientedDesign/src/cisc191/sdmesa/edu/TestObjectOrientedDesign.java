@@ -4,12 +4,10 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-class TestObjectOrientedDesign
-{
+class TestObjectOrientedDesign {
 
    @Test
-   void testVehicle()
-   {
+   void testVehicle() {
       Vehicle vehicle = new Vehicle("GMC", 80000, 7995, 4, null);
 
       assertEquals("GMC", vehicle.getManufacturerName());
@@ -19,8 +17,7 @@ class TestObjectOrientedDesign
    }
 
    @Test
-   void testOption()
-   {
+   void testOption() {
       Option moonroof = new Option("Moonroof");
       assertEquals("Moonroof", moonroof.getDetails());
       Option leather = new Option("Leather");
@@ -33,8 +30,7 @@ class TestObjectOrientedDesign
    }
 
    @Test
-   void testCar()
-   {
+   void testCar() {
       Car car = new Car("BMW", 190000, 5995, 4, null, 2);
 
       assertEquals("BMW", car.getManufacturerName());
@@ -45,8 +41,7 @@ class TestObjectOrientedDesign
    }
 
    @Test
-   void testPickupTruck()
-   {
+   void testPickupTruck() {
       PickupTruck truck = new PickupTruck("Dodge", 9000, 65995, 3, null, 1400);
 
       assertEquals("Dodge", truck.getManufacturerName());
@@ -57,8 +52,7 @@ class TestObjectOrientedDesign
    }
 
    @Test
-   void testSportsUtilityVehicle()
-   {
+   void testSportsUtilityVehicle() {
       SportsUtilityVehicle suv = new SportsUtilityVehicle("Toyota", 19000, 75995, 6, null, 4500);
 
       assertEquals("Toyota", suv.getManufacturerName());
@@ -69,8 +63,7 @@ class TestObjectOrientedDesign
    }
 
    @Test
-   void testGasCar()
-   {
+   void testGasCar() {
       GasCar car = new GasCar("BMW", 5500, 75995, 4, null, 2);
 
       assertEquals("BMW", car.getManufacturerName());
@@ -81,8 +74,7 @@ class TestObjectOrientedDesign
    }
 
    @Test
-   void testCarIsCombustible()
-   {
+   void testCarIsCombustible() {
       Combustible combustible = new GasCar("VW", 15500, 45995, 4, null, 2);
       combustible.tankUp();
       assertEquals(100, combustible.getFuelLevel());
@@ -92,8 +84,7 @@ class TestObjectOrientedDesign
    }
 
    @Test
-   void testElectricCar()
-   {
+   void testElectricCar() {
       ElectricCar car = new ElectricCar("Nissan", 10000, 35995, 4, null, 2);
 
       assertEquals("Nissan", car.getManufacturerName());
@@ -104,8 +95,7 @@ class TestObjectOrientedDesign
    }
 
    @Test
-   void testCarIsChargeable()
-   {
+   void testCarIsChargeable() {
       Chargeable chargeable = new ElectricCar("Nissan", 10000, 35995, 4, null, 2);
       chargeable.chargeUp();
       assertEquals(100, chargeable.getBatteryCharge());
@@ -115,8 +105,7 @@ class TestObjectOrientedDesign
    }
 
    @Test
-   void testHybridCar()
-   {
+   void testHybridCar() {
       HybridCar car = new HybridCar("Toyota", 1000, 63995, 4, null, 2);
 
       assertEquals("Toyota", car.getManufacturerName());
@@ -127,8 +116,7 @@ class TestObjectOrientedDesign
    }
 
    @Test
-   void testHybridCarIsCombustibleAndChargeable()
-   {
+   void testHybridCarIsCombustibleAndChargeable() {
       HybridCar car = new HybridCar("Toyota", 1000, 63995, 4, null, 2);
       car.tankUp();
       assertEquals(100, car.getFuelLevel());

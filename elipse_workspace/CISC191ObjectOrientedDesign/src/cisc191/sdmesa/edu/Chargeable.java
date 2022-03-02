@@ -2,28 +2,21 @@ package cisc191.sdmesa.edu;
 
 /**
  * Lead Author(s):
- * @author 
- * @author 
- * <<add additional lead authors here, with a full first and last name>>
+ * @author Alexandra Steiner
  * 
  * Other contributors:
- * <<add additional contributors (mentors, tutors, friends) here, with contact information>>
  * 
  * References:
  * Morelli, R., & Walde, R. (2016). Java, Java, Java: Object-Oriented Problem Solving.
  * Retrieved from https://open.umn.edu/opentextbooks/textbooks/java-java-java-object-oriented-problem-solving
  * 
- * <<add more references here>>
- *  
- * Version/date: 
+ * Version/date: 1.0 - 3/1/22
  * 
  * Responsibilities of class:
- * 
+ * An interface to implement the properties of chargable things from
  */
-/**
- */
-public interface Chargeable
-{
+
+public interface Chargeable {
 	public int getBatteryCharge();
 	public void chargeUp();
 }
