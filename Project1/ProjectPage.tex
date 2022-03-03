@@ -1,5 +1,8 @@
 \documentclass{article}
 
+\usepackage{listings} %For code
+
+% Setup table of contents links
 \usepackage{color}   %May be necessary if you want to color links
 \usepackage{hyperref}
 \hypersetup{
@@ -19,7 +22,22 @@
 \tableofcontents
 
 \section{Project Pitch}
-For this project, I plan to create a command line utility that evaluates expressions provided as text, and modifies then outputs the provided text to reflect the evaluation. This command line utility will 
+For this project, I plan to create a command line utility that evaluates expressions provided as text, and modifies then outputs the provided text to reflect the evaluation. This command line utility will be called from the command line as follows.
+
+\begin{lstlisting}
+evaluate [options...] {file_path|text_input}
+\end{lstlisting}
+
+\textbf{Options:}
+\begin{itemize}
+	\item \textbf{-f -file} Retrieve expression(s) from the file-path
+	\item \textbf{-w -write} The output is written to the file if a file path is provided
+	\item \textbf{-h -help} Displays the help message
+	\item \textbf{-v -version} Displays version and program information
+\end{itemize}
+
+\subsection{Scope of Evaluation}
+
 \section{UML Diagram}
 aa
 \section{Learning Outcomes}
