@@ -50,3 +50,21 @@ public class PictureBook implements Book {
 }
 Book book1 = new PictureBook();
 Book book2 = new TextBook();
+
+public class Book {
+    protected int numPages;
+}
+
+public class TextBook extends Book {
+    public int getNumPages() {
+        return super.numPages;
+    }
+}
+
+public class PictureBook {
+    private final int additionalPages = 10;
+
+    public int getNumPages() {
+        return super.numPages + additionalPages;
+    }
+}

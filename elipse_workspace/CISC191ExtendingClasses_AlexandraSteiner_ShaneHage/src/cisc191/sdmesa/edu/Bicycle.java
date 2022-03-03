@@ -34,6 +34,7 @@ public class Bicycle extends Cycle {
 	 */
 	public Bicycle(String newMake) {
 		super(newMake);
+		
 	}
 
 	/**

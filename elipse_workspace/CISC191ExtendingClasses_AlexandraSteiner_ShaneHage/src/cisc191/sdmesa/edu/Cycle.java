@@ -24,9 +24,10 @@ import java.awt.Color;
  */
 
 // [Is-A] A Cycle is an Object
-public abstract class Cycle  {
+public abstract class Cycle {
 	
 	private String make;
+	
 	
 	/**
 	 * establishes the make of the cycle

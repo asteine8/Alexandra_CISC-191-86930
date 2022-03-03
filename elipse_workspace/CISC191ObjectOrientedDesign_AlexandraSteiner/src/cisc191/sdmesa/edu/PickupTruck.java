@@ -19,7 +19,7 @@ package cisc191.sdmesa.edu;
 // [Is-A] PickupTruck is a Vehicle
 public class PickupTruck extends Vehicle {
 
-	public int cargoCapacity;
+	private int cargoCapacity;
 	
 	/**
 	 * Constructor for PickupTruck without cargoCapacity

@@ -16,7 +16,8 @@ package cisc191.sdmesa.edu;
  * A class that represents an option that a vehicle may or may not have. Contains the details about the option
  */
 public class Option {
-	private String details;
+	
+	private String details; // [Has-A] Option has a String
 	
 	/**
 	 * Option constructor that accepts a String describing the option's details

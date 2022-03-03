@@ -19,7 +19,7 @@ package cisc191.sdmesa.edu;
 
 public class Vehicle {
 	
-	private String manufacturerName;
+	private String manufacturerName; // [Has-A] Vehicle has a String
 	private int miles;
 	private int price;
 	private int numSeats;
