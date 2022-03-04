@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.3.3)  3 MAR 2022 01:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.3.3)  3 MAR 2022 23:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -203,7 +203,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip49
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 12.
+Package hyperref Info: Option `colorlinks' set `true' on input line 18.
 
 (C:\Users\Missu\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
@@ -213,24 +213,24 @@ File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
 ) (ProjectPage.aux)
 \openout1 = `ProjectPage.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
 \c@lstlisting=\count278
 
 (C:\Users\Missu\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
@@ -248,7 +248,7 @@ ii
 \makeMPintoPDFobject=\count284
 \everyMPtoPDFconversion=\toks19
 )
-Package hyperref Info: Link coloring ON on input line 19.
+Package hyperref Info: Link coloring ON on input line 25.
  (C:\Users\Missu\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -261,63 +261,81 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count285
 )
-LaTeX Info: Redefining \ref on input line 19.
-LaTeX Info: Redefining \pageref on input line 19.
-LaTeX Info: Redefining \nameref on input line 19.
+LaTeX Info: Redefining \ref on input line 25.
+LaTeX Info: Redefining \pageref on input line 25.
+LaTeX Info: Redefining \nameref on input line 25.
  (ProjectPage.out) (ProjectPage.out)
 \@outlinefile=\write3
 \openout3 = `ProjectPage.out'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 21.
+(Font)              <12> on input line 27.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 21.
+(Font)              <8> on input line 27.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 21.
+(Font)              <6> on input line 27.
  (ProjectPage.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 2.
+
+Overfull \hbox (4.50076pt too wide) in paragraph at lines 13--13
+ [][] [][][]\OT1/cmr/m/n/10 LO4: Con-struct pro-grams uti-liz-ing in-her-i-tanc
+e and poly-mor-phism, 
+ []
+
 )
 \tf@toc=\write4
 \openout4 = `ProjectPage.toc'.
 
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 2
-8.
+ [1
 
-(C:\Users\Missu\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr.fd
-File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+{C:/Users/Missu/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 4
+2.
+
+(C:\Users\Missu\AppData\Local\Programs\MiKTeX\tex/latex/base\omlcmr.fd
+File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 28.
+LaTeX Font Info:    Font shape `OML/cmr/bx/n' in size <10> not available
+(Font)              Font shape `OML/cmm/b/it' tried instead on input line 42.
 
-[1
+[2] [3] [4]
+Overfull \hbox (0.76114pt too wide) in paragraph at lines 131--131
+[]\OT1/cmr/bx/n/12 LO5: Con-struct pro-grams uti-liz-ing ex-cep-tion han-dling 
 
-{C:/Users/Missu/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
-(ProjectPage.aux)
+ []
+
+[5] [6] (ProjectPage.aux)
 Package rerunfilecheck Info: File `ProjectPage.out' has not changed.
-(rerunfilecheck)             Checksum: 15CCE37BC111FBF1DD08C003532A68FF;695.
+(rerunfilecheck)             Checksum: E4DD6732ABAED9056F1DCE07D402D1D6;4371.
  ) 
 Here is how much of TeX's memory you used:
- 9499 strings out of 478584
- 147124 string characters out of 2844402
- 441957 words of memory out of 3000000
- 27596 multiletter control sequences out of 15000+600000
- 473849 words of font info for 43 fonts, out of 8000000 for 9000
+ 9572 strings out of 478584
+ 148097 string characters out of 2844402
+ 490960 words of memory out of 3000000
+ 27612 multiletter control sequences out of 15000+600000
+ 474684 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,6n,63p,287b,1239s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,8n,63p,674b,1812s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\Missu\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1000.pk><C:/Users/Missu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><C:/Users/Missu/AppData/Local/Programs/MiKTeX/fonts/type1/publ
 ic/amsfonts/cm/cmbx12.pfb><C:/Users/Missu/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmr10.pfb><C:/Users/Missu/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Missu/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Missu/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on ProjectPage.pdf (2 pages, 93542 bytes).
+ype1/public/amsfonts/cm/cmbx8.pfb><C:/Users/Missu/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/Missu/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Missu/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Missu/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/M
+issu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/
+Users/Missu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.p
+fb><C:/Users/Missu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
+/cmr8.pfb><C:/Users/Missu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmtt10.pfb>
+Output written on ProjectPage.pdf (6 pages, 187941 bytes).
 PDF statistics:
- 92 PDF objects out of 1000 (max. 8388607)
- 12 named destinations out of 1000 (max. 500000)
- 49 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 274 PDF objects out of 1000 (max. 8388607)
+ 66 named destinations out of 1000 (max. 500000)
+ 169 words of extra memory for PDF output out of 10000 (max. 10000000)
 
