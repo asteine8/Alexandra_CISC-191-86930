@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.3.3)  7 MAR 2022 21:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.3.3)  11 MAR 2022 11:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -350,7 +350,7 @@ Package rerunfilecheck Info: File `ProjectPage.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  9931 strings out of 478584
- 154794 string characters out of 2844402
+ 154885 string characters out of 2844402
  496328 words of memory out of 3000000
  27948 multiletter control sequences out of 15000+600000
  474684 words of font info for 46 fonts, out of 8000000 for 9000
@@ -370,7 +370,7 @@ Users/Missu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.p
 fb><C:/Users/Missu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 /cmr8.pfb><C:/Users/Missu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
 onts/cm/cmtt10.pfb>
-Output written on ProjectPage.pdf (7 pages, 228390 bytes).
+Output written on ProjectPage.pdf (7 pages, 228252 bytes).
 PDF statistics:
  279 PDF objects out of 1000 (max. 8388607)
  67 named destinations out of 1000 (max. 500000)
